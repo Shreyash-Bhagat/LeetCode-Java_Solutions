@@ -1,4 +1,4 @@
-// Last updated: 19/10/2026, 1:40:06 pm
+// Last updated: 19/10/2026, 1:42:57 pm
 class Solution {
     public List<Integer> targetIndices(int[] nums, int target) {
         Arrays.sort(nums);
