@@ -1,8 +1,8 @@
-# Last updated: 14/11/2026, 11:57:35 am
+# Last updated: 14/11/2026, 12:09:31 pm
 class Solution:
     def minimumSumSubarray(self, nums: List[int], l: int, r: int) -> int:
         minn = inf
-        prefix = []
+        # prefix = []
         count = l
         while (count <= r):
             for i in range(len(nums)):
@@ -15,7 +15,7 @@ class Solution:
                 if(flag):
                     if ss > 0:
                         minn = min(minn,ss)
-                    prefix.append(ss)
+                    # prefix.append(ss)
             count+=1
         # print(prefix)
         if minn == inf:
