@@ -1,9 +1,6 @@
-# Last updated: 16/11/2026, 2:27:09 pm
+# Last updated: 16/11/2026, 2:28:15 pm
 class Solution:
     def digitSum(self, s: str, k: int) -> str:
-
-        if len(s) == 1:
-            return s
         while(len(s) > k):
             ans = ''
             ct = 0
@@ -17,7 +14,6 @@ class Solution:
                     ct = 0
             if(ct > 0):
                 ans += str(summ)
-            # print(ans)
             s = ans
         return s
             
