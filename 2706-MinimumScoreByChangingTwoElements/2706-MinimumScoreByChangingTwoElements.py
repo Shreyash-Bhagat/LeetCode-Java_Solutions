@@ -1,9 +1,10 @@
-# Last updated: 19/11/2026, 1:24:09 pm
+# Last updated: 19/11/2026, 1:28:14 pm
 class Solution:
-    def minimizeSum(self, nums: List[int]) -> int:
-        if len(nums) == 3:
+    def minimizeSum(self, s: List[int]) -> int:
+        if len(s) == 3:
             return 0
-        s = sorted(nums)
+        # s = sorted(nums)
+        s.sort()
         return min(
             (s[-1] - s[2]),
             (s[-2] -s[1]),
