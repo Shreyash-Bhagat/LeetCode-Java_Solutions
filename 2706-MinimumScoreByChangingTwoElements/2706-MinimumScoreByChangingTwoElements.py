@@ -1,4 +1,4 @@
-# Last updated: 19/11/2026, 1:16:38 pm
+# Last updated: 19/11/2026, 1:24:09 pm
 class Solution:
     def minimizeSum(self, nums: List[int]) -> int:
         if len(nums) == 3:
