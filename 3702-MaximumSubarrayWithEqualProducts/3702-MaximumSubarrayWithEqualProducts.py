@@ -1,8 +1,10 @@
-# Last updated: 24/11/2026, 10:32:45 am
+# Last updated: 24/11/2026, 10:34:35 am
 class Solution:
     def maxLength(self, nums: List[int]) -> int:
         maxx = 0
-        # n = len(nums)
+        n = len(nums)
+        if(n==1):
+            return 0
         for i in range(len(nums)):
             prod = 1 
             gcd = 0
